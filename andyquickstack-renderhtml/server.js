@@ -7,7 +7,7 @@ var router = express();
 var server = http.createServer(router);
 router.use(bodyParser.json());
 
-
+// Have a folder called 'views' in the same directory as the server.js file
 router.use(express.static(path.resolve(__dirname, 'views')));
 
 router.get('/', function(req, res){
